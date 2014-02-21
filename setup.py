@@ -2,7 +2,7 @@
 # See LICENSE file for details.
 
 import os
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open(os.path.join(os.path.dirname(__file__), "README.rst")) as f:
     long_description = f.read()
@@ -15,7 +15,7 @@ setup(
     author="Twisted Matrix Labs",
     author_email="twisted-python@twistedmatrix.com",
     url="http://twistedmatrix.com/",
-    packages=find_packages("filepath"),
+    packages=["filepath", "filepath.test"],
     install_requires=["zope.interface"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
