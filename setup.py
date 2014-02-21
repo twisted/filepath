@@ -1,7 +1,7 @@
 # Copyright (c) 2010 Jean-Paul Calderone
 # See LICENSE file for details.
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name="filepath",
@@ -11,6 +11,7 @@ setup(
     author_email="twisted-python@twistedmatrix.com",
     url="http://twistedmatrix.com/",
     packages=["filepath", "filepath.test"],
+    install_requires=["zope.interface"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
