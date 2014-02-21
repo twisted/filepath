@@ -9,7 +9,8 @@ env:
 
 matrix:
     allow_failures:
-        - TOX_ENV=pep8
+        - python: "2.7"
+          env: TOX_ENV=pep8
 
 install:
     - pip install tox
