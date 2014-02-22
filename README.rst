@@ -30,7 +30,10 @@ compatibility guarantees for its first few releases.
 Installing
 ==========
 
-Instructions for installing this software are in INSTALL.
+filepath requires ``zope.interface`` and Python 2.6 or 2.7.  It can be
+installed with pip.
+
+  pip install filepath
 
 Unit Tests
 ==========
